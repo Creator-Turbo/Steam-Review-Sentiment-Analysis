@@ -23,7 +23,7 @@
 This project processes user reviews of Steam games and predicts whether the sentiment is positive or negative.  
 **Link to Demo:** [Steam Review Sentiment Analysis](https://steam-sentiment-analysis.onrender.com)
 
-![Steam Sentiment Analysis](sentiment_analysis.jpg)
+![Steam Sentiment Analysis](https://i.imgur.com/O6Q1lGv.png)
 
 ---
 
