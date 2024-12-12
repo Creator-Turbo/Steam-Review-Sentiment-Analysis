@@ -23,3 +23,7 @@ mlflow
 # Additional Tools
 ydata-profiling
 flask
+ipykernel
+
+
+missingno
