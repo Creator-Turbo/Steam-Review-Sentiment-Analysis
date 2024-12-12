@@ -1,0 +1,25 @@
+# Core Libraries
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# Deep Learning
+tensorflow
+keras
+
+# Ensemble Learning
+xgboost
+lightgbm
+catboost
+
+# Jupyter Ecosystem
+jupyter
+notebook
+ipython
+mlflow
+
+# Additional Tools
+ydata-profiling
+flask
