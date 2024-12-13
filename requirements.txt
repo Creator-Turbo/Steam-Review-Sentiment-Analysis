@@ -27,3 +27,6 @@ ipykernel
 
 
 missingno
+
+# text preprocessing 
+nltk
