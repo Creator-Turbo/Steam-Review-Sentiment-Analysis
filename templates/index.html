@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Review Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Steam Review Sentiment Analysis</h1>
+        <p>Enter a Steam review to predict the sentiment (positive/negative):</p>
+        
+        <form action="/predict" method="POST">
+            <textarea name="review" rows="4" cols="50" placeholder="Enter your review here..."></textarea><br>
+            <button type="submit">Submit</button>
+          </form>
+          
+
+        <div id="prediction-result">
+            <h2>Sentiment: <span id="sentiment"></span></h2>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
