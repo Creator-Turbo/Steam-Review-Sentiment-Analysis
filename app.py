@@ -13,15 +13,24 @@ vectorizer = pickle.load(open('model/tfidf_vectorizer.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+## updated code here show it on githube 
 @app.route('/predict', methods=['POST'])
 def predict():
-    if request.method == 'POST':
+    if 'review' in request.form:
         review_text = request.form['review']
-        # Transform the text using the vectorizer
+        
+        # Transform the review text using the fitted vectorizer
         review_vector = vectorizer.transform([review_text])
+        print(review_text)
+        
+        # Make a prediction
+
         prediction = model.predict(review_vector)
         sentiment = 'Positive' if prediction[0] == 1 else 'Negative'
-        return jsonify({'sentiment': sentiment})
+        
+        return render_template('result.html', sentiment=sentiment)
+    else:
+        return "Error: Review text is missing", 400
 
 if __name__ == '__main__':
     app.run(debug=True)
