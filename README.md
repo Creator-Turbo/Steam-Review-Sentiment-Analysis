@@ -118,6 +118,10 @@ Deploy and your app will be live!
 
 ## To Do
 
+- Define the project goal, prepare the data, and train the model.
+- Deploy the model and set up monitoring tools to track its performance.
+- Automate the pipeline, document the process, test the system, and ensure continuous improvement.
+
 
 
 
