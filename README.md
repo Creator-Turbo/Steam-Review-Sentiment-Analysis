@@ -81,7 +81,7 @@ pip install -r requirements.txt
 
 
 ## Run
-To train the Deep leaning models:
+To train the Machine leaning models:
  To run the Flask web app locally
 ```bash
 python app.py
