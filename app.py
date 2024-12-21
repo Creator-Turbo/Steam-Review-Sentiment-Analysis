@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Load the model and vectorizer
 model = pickle.load(open('model/sentiment_model.pkl', 'rb'))
-vectorizer = pickle.load(open('model/tfidf_vectorizer.pkl', 'rb'))
+vectorizer = pickle.load(open('model/count_vectorizer.pkl', 'rb'))
 
 @app.route('/')
 def home():
